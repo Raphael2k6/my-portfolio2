@@ -1,0 +1,125 @@
+body {
+    margin: auto;
+}
+
+.main-nav {
+    font-family: Ringside Regular A, Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-size: 1em;
+    margin: auto;
+    background-color: #17252A;
+}
+
+.main-nav li {
+    padding: 2em;
+    list-style: none;
+}
+
+.main-nav li:hover {
+   color: #2B7A78;
+   text-transform: uppercase;
+}
+
+.main-nav a {
+    color: #FEFFFF;
+    text-decoration: none;
+}
+
+.logo {
+    margin-top: 15px;
+}
+
+.container {
+    background-color: #3AAFA9;
+    font-family: Sentinel SSm A,Sentinel SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    
+}
+
+.content {
+    text-align: center;
+    padding-top: 6em;
+}
+
+.extra-large {
+    color: #FEFFFF;
+    font-size: 5em;
+
+}
+
+.about-me, .contact {
+    color: #17252A;
+    background-color: #DEF2F1;
+    padding: 10px 0px 20px 0px;
+    text-align: center;
+    font-family: Sentinel SSm A,Sentinel SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+
+.sm-handles {
+    background-color: #17252A;
+    padding: 10px 10px 20px 20px;
+    color: #FEFFFF;
+    font-family: Ringside Regular A, Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+}
+
+#email {
+    padding: 5px 50px;
+    margin-left: 5px;
+}
+
+.btn--color {
+    color: #FEFFFF;
+    background-color: #2B7A78;
+    border-radius: 25px;
+    margin-left: 5px;
+    border: 1px solid green;
+    padding: 5px 20px 5px 20px;
+}
+
+.btn--color:hover {
+    background-color: #DEF2F1;
+}
+
+.fab {
+    font-size: 20px;
+    padding: 20px 5px 0px 0px;
+    color: #DEF2F1
+}
+
+.fab:hover{
+    color: #2B7A78;
+}
+
+footer {
+    text-align: center;
+    font-size: 15px;
+    color: #17252A;
+}
+
+@media only screen and (max-width: 500px) {
+    .main-nav {
+        font-size: 1.1em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav li {
+        padding: 1.5em;
+    }
+    .extra-large {
+        font-size:3em
+    }
+    /* justify content "space around" for medium screens of 800px, if you want a vertical nav bar for small screens of 500px and less use flex direction "column" */
+.sm-handles {
+    text-align: center;
+}
+#email {
+    padding-right: 0px;
+    margin: 10px;
+    }
+}

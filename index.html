@@ -8,14 +8,14 @@
         <meta name="keywords" content="web design, front-end web development, software engineer, Javascript engineer">
         <title>Raphael Donanu</title>
         <link rel="icon" type= "image/png" href="img/favicon.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     </head>
     <body>
         <header>
-            <div class="branding">
-                <img src="img/mylogo.png" alt="A logo.">
-            </div>
             <nav class="nav-bar">
                 <ul class="main-nav">
+                    <a href="index.html"><img src="img/mylogo3.png" alt="A logo." width="100px" height="50px" class="logo"></a>
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#contact">Contact Me</a></li>
                     <li><a href="#">My Projects</a></li>
@@ -27,23 +27,30 @@
                 <div class="container">
                     <div class="content">
                         <img src="img/dp.jpg" alt="A photograph of a smilling man standing on a river bank." width="200px" height="250px">
-                        <h3>Raphael Donanu</h3>
-                        <h2 id="about">About me</h2>
-                        <p>Hello, my name is Raphael Donanu, and I am a front-end engineer based in Lagos, Nigeria.
-                           I have a diverse set of skills ranging from HTML - CSS - Javascript to React -  Node.js with experience working on databases.
-                        </p>   
-                        <p>I enjoy creating business solutions, which may be anything from basic websites to rich interactive web applications. 
-                           If you seek that web presence or you are an employer looking to hire, you can get in touch with me.
-                        </p>
+                        <p class=" animated bounce extra-large">Raphael Donanu</p>
+                        <p class=" animated bounceInRight small">Software Engineer, Frontend Web Developer, Javascript Programmer.</p>
+                        <p class=" animated bounceInLeft small">Solving practical problems using technology.</p> 
                     </div>
+                </div>    
+                <div class="about-me">  
+                    <h2 id="about">About me</h2>
+                    <p>Hello, my name is Raphael Donanu, and I am a front-end engineer based in Lagos, Nigeria.
+                         I have a diverse set of skills ranging from HTML - CSS - Javascript to React -  Node.js with experience working on databases.
+                    </p>   
+                    <p>I enjoy creating business solutions, which may be anything from basic websites to rich interactive web applications. 
+                        If you seek that web presence or you are an employer looking to hire, you can get in touch with me.
+                    </p>
                 </div>
             </section>
             <section>
                 <div class="contact">
                     <div class="contact-icons">
-                        <h2 id="contact">Contact Me</h2>
+                        <h1 id="contact">Contact Me</h1>
+                        <i class="fas fa-envelope-square"></i>
                         <h4>raphael.donanu@konga.com</h4>
+                        <i class="fas fa-mobile-alt"></i>
                         <h4>+2348168993327</h4>
+                        <i class="fas fa-map-marker-alt"></i>
                         <address>3b Cocoa Industries Road, Off Akilo Road, Ogba, Lagos State.</address>
                     </div>
                  </div>
@@ -54,13 +61,14 @@
                     <input type="email" id="email" placeholder="Enter Your Email" name="email">
                     <button type="submit" class="btn--color">Subscribe</button>
                 </form>
-                    <a href="https://linkedin.com/in/raphael-donanu" target="_blank" rel="noopener"></a>
-                    <a href="https://github.com/Raphael2k6" target="_blank" rel="noopener"></a>
-                    <a href="https://www.facebook.com/raphael.donanu" target="_blank" rel="noopener"></a>
-                    <a href="https://www.instagram.com/raphaeldonanu/?hl=en" target="_blank" rel="noopener"></a>
+                <a href="https://linkedin.com/in/raphael-donanu" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Raphael2k6" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/raphael.donanu" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/raphaeldonanu/?hl=en" target="_blank" rel="noopener"><i class="fab fa-instagram-square"></i></a>
                 </div>
             </section>
         </main>
         <footer><p>Raphael Donanu, Copyright &copy; 2020</p></footer>
+        <script src="https://kit.fontawesome.com/bd7bbe8fc3.js" crossorigin="anonymous"></script>
     </body>
 </html>
