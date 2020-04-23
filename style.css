@@ -49,13 +49,12 @@ body {
 .large-text {
     color: #FEFFFF;
     font-size: 5em;
-
 }
 
 .about-me, .contact {
     color: #17252A;
     background-color: #DEF2F1;
-    padding: 10px 0px 20px 0px;
+    padding: 5px 10px 5px 10px;
     text-align: center;
     font-family: Sentinel SSm A,Sentinel SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
 }
@@ -70,6 +69,9 @@ body {
 #email {
     padding: 5px 50px;
     margin-left: 5px;
+    border-radius: 10px;
+    border: 1px solid #17252A;
+    background-color: #DEF2F1;
 }
 
 .btn--color {
@@ -109,10 +111,13 @@ footer {
     }
 
     .main-nav li {
-        padding: 1.5em;
+        padding: 1em;
     }
-    .extra-large {
+    .large-text {
         font-size:3em
+    }
+    .content {
+        padding-top: 3em
     }
     /* justify content "space around" for medium screens of 800px, if you want a vertical nav bar for small screens of 500px and less use flex direction "column" */
 .sm-handles {
