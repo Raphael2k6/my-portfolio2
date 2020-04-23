@@ -1,7 +1,7 @@
 body {
     margin: auto;
 }
-
+/* navigation */
 .main-nav {
     font-family: Ringside Regular A, Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
     display: flex;
@@ -15,6 +15,7 @@ body {
 .main-nav li {
     padding: 2em;
     list-style: none;
+    margin-right: 30px;
 }
 
 .main-nav li:hover {
@@ -37,8 +38,7 @@ body {
     font-weight: bold;
     display: flex;
     justify-content: center;
-    align-self: center;
-    
+    align-self: center; 
 }
 
 .content {
@@ -46,7 +46,7 @@ body {
     padding-top: 6em;
 }
 
-.extra-large {
+.large-text {
     color: #FEFFFF;
     font-size: 5em;
 
@@ -117,9 +117,10 @@ footer {
     /* justify content "space around" for medium screens of 800px, if you want a vertical nav bar for small screens of 500px and less use flex direction "column" */
 .sm-handles {
     text-align: center;
+    padding: 10px 5px 5px 0px;
 }
 #email {
-    padding-right: 0px;
+    padding: 0px 0px;
     margin: 10px;
     }
 }
