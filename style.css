@@ -1,5 +1,15 @@
+:root {
+    --mainColor: #17252A;
+    --effectColor: #2B7A78;
+    --mainWhite: #FEFFFF;
+    --lightBackground: #DEF2F1;
+  }
+
+
 body {
     margin: auto;
+    padding: 0;
+    box-sizing: border-box;
 }
 /* navigation */
 .main-nav {
@@ -7,29 +17,29 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 1rem bold;
     margin: auto;
-    background-color: #17252A;
+    background-color: var(--mainColor);
 }
 
 .main-nav li {
     padding: 2rem;
     list-style: none;
-    margin-right: 30px;
-}
-
-.main-nav li:hover {
-   color: #2B7A78;
-   text-transform: uppercase;
+    margin-right: 1.875rem;
 }
 
 .main-nav a {
-    color: #FEFFFF;
+    color: var(--mainWhite);
     text-decoration: none;
 }
 
+.main-nav li:hover {
+   background-color: var(--effectColor);
+   text-transform: uppercase;
+}
+
 .logo {
-    margin-top: 15px;
+    margin-top: 0.9375rem;
 }
 
 .container {
@@ -41,66 +51,97 @@ body {
     align-self: center; 
 }
 
+.photo {
+    border-radius: 1.5625rem;
+}
+
+.my-motto{
+    padding-bottom: 1.25rem;
+}
+
 .content {
     text-align: center;
     padding-top: 6rem;
 }
 
 .large-text {
-    color: #FEFFFF;
+    color: var(--mainWhite);
     font-size: 5rem;
 }
 
-.about-me, .contact {
-    color: #17252A;
-    background-color: #DEF2F1;
-    padding: 5px 10px 5px 10px;
-    text-align: center;
+.about-me {
+    color: var(--mainColor);
+    background-color: var(--lightBackground);
+    padding: 2.5rem 3.125rem 0.0625rem 3.125rem;
+    margin-bottom: 0.125rem; 
+    margin-top: 0.125rem;
+    border-radius: 0.625rem;
+    text-align: left;
+    font-size: 1rem bold;
+    font-family: Sentinel SSm A,Sentinel SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+
+.contact {
+    color: var(--mainColor);
+    background-color: var(--lightBackground);
+    padding: 2.5rem 3.125rem 1.25rem 3.125rem;
+    border-radius: 0.625rem;
+    margin-bottom: 0.125rem;
+    text-align: left;
     font-family: Sentinel SSm A,Sentinel SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
 }
 
 .sm-handles {
-    background-color: #17252A;
-    padding: 10px 10px 20px 20px;
-    color: #FEFFFF;
+    background-color: var(--mainColor);
+    padding: 0.625rem 0.625rem 1.25rem 1.25rem;
+    color: var(--mainWhite);
     font-family: Ringside Regular A, Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
 }
 
 .email {
-    padding: 5px 50px;
-    margin-left: 5px;
-    border-radius: 10px;
-    border: 1px solid #17252A;
-    background-color: #DEF2F1;
+    padding: 0.3125rem 3.125rem;
+    margin-left: 0.3125rem;
+    border-radius: 0.625rem;
+    border: 1px solid var(--mainColor);
+    background-color: var(--lightBackground);
 }
 
 .btn--color {
-    color: #FEFFFF;
-    background-color: #2B7A78;
-    border-radius: 25px;
-    margin-left: 5px;
-    border: 1px solid #2B7A78;
-    padding: 5px 20px 5px 20px;
+    color: var(--mainWhite);
+    background-color: var(--effectColor);
+    border-radius: 1.5625rem;
+    margin-left: 0.3125rem;
+    border: 1px solid var(--effectColor);
+    padding: 0.3125rem 1.25rem;
 }
 
 .btn--color:hover {
-    background-color: #DEF2F1;
+    background-color: transparent;
+    color: var(--effectColor);
+    border: 1px solid var(--mainWhite);
+}
+
+.fas {
+    padding-right: 1.25rem;
+    font-size:1.25rem;
 }
 
 .fab {
-    font-size: 20px;
-    padding: 20px 5px 0px 0px;
-    color: #DEF2F1
+    font-size: 1.25rem;
+    padding: 1.25rem 0.3125rem 0rem 0rem;
+    color: var(--lightBackground)
 }
 
 .fab:hover{
-    color: #2B7A78;
+    color: var(--effectColor);
 }
 
 footer {
     text-align: center;
-    font-size: 15px;
-    color: #17252A;
+    font-size: 0.9375rem;
+    color: var(--mainColor);
+    font-family: Sentinel SSm A,Sentinel SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -119,13 +160,18 @@ footer {
     .content {
         padding-top: 3em
     }
+
+    .about-me, .contact {
+        padding: 2.5rem 0.9375rem 1.25rem 0.9375rem;
+        text-align: justify;
+    }
     /* justify content "space around" for medium screens of 800px, if you want a vertical nav bar for small screens of 500px and less use flex direction "column" */
 .sm-handles {
     text-align: center;
-    padding: 10px 5px 5px 0px;
+    padding: 0.625rem 0.3125rem 0.3125rem 0rem;
 }
 #email {
-    padding: 5px 0px 5px 0px;
-    margin: 10px;
+    padding: 0.3125rem 0rem;
+    margin: 0.625rem;
     }
 }
