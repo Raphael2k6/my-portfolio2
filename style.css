@@ -134,11 +134,11 @@ body {
 .fab {
     font-size: 1.25rem;
     padding: 1.25rem 0.3125rem 0rem 0rem;
-    color: var(--lightBackground)
+    color: var(--effectColor)
 }
 
 .fab:hover{
-    color: var(--effectColor);
+    color: var(--mainWhite);
 }
 
 footer {
