@@ -1,0 +1,175 @@
+nav ul {
+  font-family: Sentinel SSm A, Sentinel SSm B, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  font-size: 1rem bold;
+  margin: auto;
+  background-color: #1a1b1d;
+}
+nav li {
+  padding: 2rem;
+  list-style: none;
+  margin-right: 1.875rem;
+}
+nav a {
+  color: #FEFFFF;
+  text-decoration: none;
+}
+
+li :hover {
+  color: #ca8011;
+  text-transform: uppercase;
+}
+
+.logo {
+  margin-top: 0.9375rem;
+  border-radius: 0.25rem;
+}
+
+.container {
+  background-image: url("img/img1.jpg");
+  background-size: cover;
+  font-family: Sentinel SSm A, Sentinel SSm B, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.photo {
+  border-radius: 1.5625rem;
+  width: 12.5rem;
+  height: 14rem;
+}
+
+.my-motto {
+  padding-bottom: 1.25rem;
+  color: #efeffa;
+}
+
+.content {
+  text-align: center;
+  padding-top: 7rem;
+}
+
+.large-text {
+  color: #FEFFFF;
+  font-size: 5rem;
+}
+
+body {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about-me {
+  color: #1a1b1d;
+  background-color: #efeffa;
+  margin-bottom: 0.125rem;
+  border-radius: 0.625rem;
+  text-align: left;
+  font-family: Ringside Regular A, Ringside Regular B, Rubik, Lato, Lucida Grande, Lucida Sans Unicode, Tahoma, Sans-Serif;
+  padding: 2.5rem 3.125rem 0.0625rem 3.125rem;
+  margin-top: 0.125rem;
+  font-size: 1rem;
+}
+
+.contact {
+  color: #1a1b1d;
+  background-color: #efeffa;
+  margin-bottom: 0.125rem;
+  border-radius: 0.625rem;
+  text-align: left;
+  font-family: Ringside Regular A, Ringside Regular B, Rubik, Lato, Lucida Grande, Lucida Sans Unicode, Tahoma, Sans-Serif;
+  padding: 2.5rem 3.125rem 1.25rem 3.125rem;
+}
+
+.sm-handles {
+  background-color: #1a1b1d;
+  padding: 0.625rem 0.625rem 1.25rem 1.25rem;
+  color: #FEFFFF;
+  font-family: Ringside Regular A, Ringside Regular B, Rubik, Lato, Lucida Grande, Lucida Sans Unicode, Tahoma, Sans-Serif;
+}
+
+.email {
+  padding: 0.3125rem 3.125rem;
+  margin-left: 0.3125rem;
+  border-radius: 0.625rem;
+  border: 1px solid #1a1b1d;
+  background-color: #efeffa;
+}
+
+.btn--color {
+  color: #FEFFFF;
+  background-color: #ca8011;
+  border-radius: 1.5625rem;
+  margin-left: 0.3125rem;
+  border: 1px solid #ca8011;
+  padding: 0.3125rem 1.25rem;
+}
+
+.btn--color:hover {
+  background-color: transparent;
+  color: #ca8011;
+  border: 1px solid #FEFFFF;
+}
+
+.fas {
+  padding-right: 1.25rem;
+  font-size: 1.25rem;
+}
+
+.fab {
+  font-size: 1.25rem;
+  padding: 1.25rem 0.3125rem 0rem 0rem;
+  color: #ca8011;
+}
+
+.fab:hover {
+  color: #FEFFFF;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9375rem;
+  color: #1a1b1d;
+  font-family: Sentinel SSm A, Sentinel SSm B, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+@media only screen and (max-width: 500px) {
+  nav ul {
+    font-size: 1.1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav li {
+    padding: 1rem;
+  }
+
+  .large-text {
+    font-size: 3rem;
+  }
+
+  .content {
+    padding-top: 3rem;
+  }
+
+  .about-me, .contact {
+    padding: 2.5rem 1.5rem 1.25rem 1.5rem;
+    text-align: justify;
+  }
+
+  .sm-handles {
+    text-align: center;
+    padding: 0.625rem 0.3125rem 0.3125rem 0rem;
+  }
+
+  .email {
+    padding: 0.3125rem 0rem;
+    margin: 0.625rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

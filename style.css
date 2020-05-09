@@ -40,7 +40,7 @@ body {
 
 .logo {
     margin-top: 0.9375rem;
-    border-radius: 5px;
+    border-radius: 0.25rem;
 }
 
 .container {
@@ -151,19 +151,19 @@ footer {
 
 @media only screen and (max-width: 500px) {
     .main-nav {
-        font-size: 1.1em;
+        font-size: 1.1rem;
         flex-direction: column;
         align-items: center;
     }
 
     .main-nav li {
-        padding: 1em;
+        padding: 1rem;
     }
     .large-text {
-        font-size:3em
+        font-size: 3rem;
     }
     .content {
-        padding-top: 3em
+        padding-top: 3rem;
     }
 
     .about-me, .contact {
@@ -171,12 +171,12 @@ footer {
         text-align: justify;
     }
     /* justify content "space around" for medium screens of 800px, if you want a vertical nav bar for small screens of 500px and less use flex direction "column" */
-.sm-handles {
-    text-align: center;
-    padding: 0.625rem 0.3125rem 0.3125rem 0rem;
-}
-#email {
-    padding: 0.3125rem 0rem;
-    margin: 0.625rem;
+    .sm-handles {
+        text-align: center;
+        padding: 0.625rem 0.3125rem 0.3125rem 0rem;
+    }
+    .email {
+        padding: 0.3125rem 0rem;
+        margin: 0.625rem;
     }
 }

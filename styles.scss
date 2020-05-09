@@ -1,0 +1,127 @@
+@use 'navbar';
+@use 'main-display';
+
+$mainColor: rgb(26, 27, 29);
+$effectColor: rgb(202, 128, 17);
+$mainWhite: #FEFFFF;
+$lightBackground: rgb(239, 239, 250);
+$primaryFont: Sentinel SSm A,Sentinel SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+$secondaryFont: Ringside Regular A, Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+
+@mixin important-properties {
+    color: $mainColor;
+    background-color: $lightBackground;
+    margin-bottom: 0.125rem; 
+    border-radius: 0.625rem;
+    text-align: left;
+    font-family: $secondaryFont;
+}
+
+body {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about-me {
+    @include important-properties;
+    padding: 2.5rem 3.125rem 0.0625rem 3.125rem;
+    margin-top: 0.125rem;
+    font-size: 1rem;
+}
+
+.contact {
+    @include important-properties;
+    padding: 2.5rem 3.125rem 1.25rem 3.125rem;
+}
+
+.sm-handles {
+    background-color: $mainColor;
+    padding: 0.625rem 0.625rem 1.25rem 1.25rem;
+    color: $mainWhite;
+    font-family: $secondaryFont
+}
+
+.email {
+    padding: 0.3125rem 3.125rem;
+    margin-left: 0.3125rem;
+    border-radius: 0.625rem;
+    border: 1px solid $mainColor;
+    background-color: $lightBackground;
+}
+
+.btn--color {
+    color: $mainWhite;
+    background-color: $effectColor;
+    border-radius: 1.5625rem;
+    margin-left: 0.3125rem;
+    border: 1px solid $effectColor;
+    padding: 0.3125rem 1.25rem;
+}
+
+.btn--color:hover {
+    background-color: transparent;
+    color: $effectColor;
+    border: 1px solid $mainWhite;
+}
+
+.fas {
+    padding-right: 1.25rem;
+    font-size:1.25rem;
+}
+
+.fab {
+    font-size: 1.25rem;
+    padding: 1.25rem 0.3125rem 0rem 0rem;
+    color: $effectColor;
+}
+
+.fab:hover{
+    color: $mainWhite;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9375rem;
+    color: $mainColor;
+    font-family: $primaryFont;
+}
+
+@media only screen and (max-width: 500px) {
+    nav {
+        ul {
+         font-size: 1.1rem;
+         flex-direction: column;
+         align-items: center;
+        }
+        li {
+         padding: 1rem;
+        }
+    }
+ 
+    .large-text {
+        font-size: 3rem;
+    }
+ 
+    .content {
+        padding-top: 3rem;
+    }
+ 
+    .about-me, .contact {
+     padding: 2.5rem 1.5rem 1.25rem 1.5rem;
+     text-align: justify;
+    }
+ 
+    .sm-handles {
+     text-align: center;
+     padding: 0.625rem 0.3125rem 0.3125rem 0rem;
+    }
+ 
+    .email {
+     padding: 0.3125rem 0rem;
+     margin: 0.625rem;
+    }
+ }
+ 
+
+
