@@ -36,7 +36,7 @@ body {
 }
 
 .sm-handles {
-    background-color: $mainColor;
+    background: linear-gradient(to right, $mainColor, $effectColor);
     padding: 0.625rem 0.625rem 1.25rem 1.25rem;
     color: $mainWhite;
     font-family: $secondaryFont
