@@ -1,0 +1,34 @@
+$mainWhite: rgb(254, 255, 255);
+$lightBackground: rgb(239, 239, 250);
+$primaryFont: Sentinel SSm A,Sentinel SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+
+.container {
+    background-image: url("img/img1.jpg");
+    background-size: cover;
+    font-family: $primaryFont;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-self: center; 
+}
+
+.photo {
+    border-radius: 1.5625rem;
+    width: 12.5rem;
+    height: 14rem;
+}
+
+.my-motto{
+    padding-bottom: 1.25rem;
+    color: $lightBackground;
+}
+
+.content {
+    text-align: center;
+    padding-top: 7rem;
+}
+
+.large-text {
+    color: $mainWhite;
+    font-size: 5rem;
+}

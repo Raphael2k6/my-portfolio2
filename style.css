@@ -1,0 +1,182 @@
+:root {
+    --mainColor: rgb(26, 27, 29);
+    --effectColor: rgb(202, 128, 17);
+    --mainWhite: #FEFFFF;
+    --lightBackground: rgb(239, 239, 250);
+  }
+
+
+body {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navigation */
+.main-nav {
+    font-family: Sentinel SSm A,Sentinel SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-size: 1rem bold;
+    margin: auto;
+    background-color: var(--mainColor);
+}
+
+.main-nav li {
+    padding: 2rem;
+    list-style: none;
+    margin-right: 1.875rem;
+}
+
+.main-nav a {
+    color: var(--mainWhite);
+    text-decoration: none;
+}
+
+.main-nav li :hover {
+   color: var(--effectColor);
+   text-transform: uppercase;
+}
+
+.logo {
+    margin-top: 0.9375rem;
+    border-radius: 0.25rem;
+}
+
+.container {
+    background-image: url("img/img1.jpg");
+    background-size: cover;
+    font-family: Sentinel SSm A,Sentinel SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-self: center; 
+}
+
+.photo {
+    border-radius: 1.5625rem;
+    width: 12.5rem;
+    height: 14rem;
+}
+
+.my-motto{
+    padding-bottom: 1.25rem;
+    color: var(--lightBackground);
+}
+
+.content {
+    text-align: center;
+    padding-top: 7rem;
+}
+
+.large-text {
+    color: var(--mainWhite);
+    font-size: 5rem;
+}
+
+.about-me {
+    color: var(--mainColor);
+    background-color: var(--lightBackground);
+    padding: 2.5rem 3.125rem 0.0625rem 3.125rem;
+    margin-bottom: 0.125rem; 
+    margin-top: 0.125rem;
+    border-radius: 0.625rem;
+    text-align: left;
+    font-size: 1rem;
+    font-family: Ringside Regular A, Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+}
+
+.contact {
+    color: var(--mainColor);
+    background-color: var(--lightBackground);
+    padding: 2.5rem 3.125rem 1.25rem 3.125rem;
+    border-radius: 0.625rem;
+    margin-bottom: 0.125rem;
+    text-align: left;
+    font-family: Ringside Regular A, Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+}
+
+.sm-handles {
+    background: linear-gradient(to right, var(--mainColor), var(--effectColor));
+    padding: 0.625rem 0.625rem 1.25rem 1.25rem;
+    color: var(--mainWhite);
+    font-family: Ringside Regular A, Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+}
+
+.email {
+    padding: 0.3125rem 3.125rem;
+    margin-left: 0.3125rem;
+    border-radius: 0.625rem;
+    border: 1px solid var(--mainColor);
+    background-color: var(--lightBackground);
+}
+
+.btn--color {
+    color: var(--mainWhite);
+    background-color: var(--effectColor);
+    border-radius: 1.5625rem;
+    margin-left: 0.3125rem;
+    border: 1px solid var(--effectColor);
+    padding: 0.3125rem 1.25rem;
+}
+
+.btn--color:hover {
+    background-color: transparent;
+    color: var(--effectColor);
+    border: 1px solid var(--mainWhite);
+}
+
+.fas {
+    padding-right: 1.25rem;
+    font-size:1.25rem;
+}
+
+.fab {
+    font-size: 1.25rem;
+    padding: 1.25rem 0.3125rem 0rem 0rem;
+    color: var(--effectColor)
+}
+
+.fab:hover{
+    color: var(--mainWhite);
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9375rem;
+    color: var(--mainColor);
+    font-family: Sentinel SSm A,Sentinel SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+
+}
+
+@media only screen and (max-width: 500px) {
+    .main-nav {
+        font-size: 1.1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav li {
+        padding: 1rem;
+    }
+    .large-text {
+        font-size: 3rem;
+    }
+    .content {
+        padding-top: 3rem;
+    }
+
+    .about-me, .contact {
+        padding: 2.5rem 0.9375rem 1.25rem 0.9375rem;
+        text-align: justify;
+    }
+    /* justify content "space around" for medium screens of 800px, if you want a vertical nav bar for small screens of 500px and less use flex direction "column" */
+    .sm-handles {
+        text-align: center;
+        padding: 0.625rem 0.3125rem 0.3125rem 0rem;
+    }
+    .email {
+        padding: 0.3125rem 0rem;
+        margin: 0.625rem;
+    }
+}
