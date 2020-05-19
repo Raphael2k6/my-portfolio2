@@ -1,6 +1,6 @@
 $mainColor: rgb(26, 27, 29);
 $effectColor: rgb(202, 128, 17);
-$mainWhite: #FEFFFF;
+$mainWhite: rgb(254, 255, 255);
 $primaryFont: Sentinel SSm A,Sentinel SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
 
 nav {
@@ -9,7 +9,7 @@ nav {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        font-size: 1rem bold;
+        font-size: 1rem;
         margin: auto;
         background-color: $mainColor;
     }
